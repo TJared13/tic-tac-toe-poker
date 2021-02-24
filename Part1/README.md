@@ -62,7 +62,7 @@ _Note: Review the exisiting HTML so you are familiar with the structure you are 
       <span id="player">X</span>
       <span>'s turn</span>
     </main>
-    <script src="./index.js"></script>
+    <script src='./index.js'></script>
   </body>
 </html>
 
