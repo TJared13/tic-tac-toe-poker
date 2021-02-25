@@ -8,11 +8,39 @@
   </head>
 <body>
   <header><h1>Poker Cards</h1></header>
-    <main>
-        <section><span>A</span><span>♦</span><span>A</span></section>
-        <section><span>A</span><span>♣</span><span>A</span></section>
-        <section><span>A</span><span>♥</span><span>A</span></section>
-        <section><span>A</span><span>♠</span><span>A</span></section>
-    </main>
+  
+
+  <main>
+    <section id="diamonds"><span>A</span><span>♦</span><span>A</span></section>
+    <section id="clubs"><span>A</span><span>♣</span><span>A</span></section>
+    <section id="hearts"><span>A</span><span>♥</span><span>A</span></section>
+    <section id="spades"><span>A</span><span>♠</span><span>A</span></section>
+  </main>
+  <!-- <div class="cardInput"></div> -->
+  <!-- <input id='cardId' type="text" placeholder="Set card face"/> -->
+  <!-- <input id="cardStyle" type="text" placeholder="Select color" /> -->
+  
+<div class="cardChoices">
+<label class='dropMenu' for="face">Choose a face:</label>
+<select name="face" id="cardId">
+  <option value="diamonds">Diamonds</option>
+  <option value="spades">Spades</option>
+  <option value="clubs">Clubs</option>
+  <option value="hearts">Hearts</option>
+</select>
+
+<label class='dropMenu' for="color">Choose a color:</label>
+<select name="color" id="cardStyle">
+  <option value="red">Red</option>
+  <option value="black">Black</option>
+</select>
+</div>
+  </div>
+
+  <div class="buttonPosition">
+  <button class="buttonSpace" id="btn" onclick="setCard()">Set Card</button>
+  <button class="buttonSpace" id="resetBtn" onclick="reset()">Reset Card</button>
+</div>
+    <script src="index.js"></script>
 </body>
 </html>
